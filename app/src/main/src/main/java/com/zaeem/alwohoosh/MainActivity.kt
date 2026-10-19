@@ -1,4 +1,4 @@
-package com.zaeemalwohoosh.app
+package com.zaeem.alwohoosh
 
 import android.app.Activity
 import android.os.Bundle
@@ -9,13 +9,12 @@ import android.graphics.Color
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val textView = TextView(this)
-        textView.text = "مرحبا بك في زعيم الوحوش!\nالتطبيق يشتغل! ✅"
-        textView.textSize = 26f
-        textView.setTextColor(Color.WHITE)
-        textView.setBackgroundColor(Color.BLACK)
-        textView.gravity = Gravity.CENTER
-        textView.setPadding(50, 300, 50, 50)
-        setContentView(textView)
+        val tv = TextView(this)
+        tv.text = "زعيم الوحوش شغال! 🔥"
+        tv.textSize = 28f
+        tv.setTextColor(Color.WHITE)
+        tv.setBackgroundColor(Color.BLACK)
+        tv.gravity = Gravity.CENTER
+        setContentView(tv)
     }
 }

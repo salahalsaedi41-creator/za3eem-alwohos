@@ -4,14 +4,22 @@ plugins {
 }
 
 android {
-    namespace = "com.zaeemalwohoosh.app"
+    namespace = "com.zaeem.alwohoosh"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.zaeemalwohoosh.app"
+        applicationId = "com.zaeem.alwohoosh"
         minSdk = 23
         targetSdk = 35
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
+    }
+    
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
